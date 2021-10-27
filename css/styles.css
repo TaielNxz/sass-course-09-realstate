@@ -1,0 +1,72 @@
+:root { 
+    --primaryFont: 'Open Sans', sans-serif;
+    --secondaryFont: 'Roboto', cursive;
+
+    --primary: #3b4862;
+
+    --black: #000;
+    --white: #FFFFFF;
+    --grey: #eeefed;
+    --lightGrey: hsl(0, 0%, 97%);
+    --lightGrey-2: hsl(0, 0%, 94%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: var(--primaryFont);
+    font-size: 1.6rem;
+    background-color: var(--lightGrey-2);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.4rem;
+    font-family: var(--secondaryFont);
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: var(--secondaryFont);
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+[class$="heading"] {
+    margin: 2rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+p {
+    color: var(--black);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
