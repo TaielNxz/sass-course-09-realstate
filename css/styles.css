@@ -193,3 +193,98 @@ p {
         bottom: -5rem;
     }
 }
+
+/* ==== properties ==== */
+
+.properties {
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .properties-list {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr );
+        gap: 2rem;
+    }
+}
+
+.property {
+    background-color: var(--white);
+}
+
+.property:nth-child(1) .property-img {
+    background-image: 
+        linear-gradient( to bottom, var(--blackTransparent) 0%, var(--blackTransparent) 100%),
+        url(../img/propiedad_1.jpg);  
+}
+
+.property:nth-child(2) .property-img {
+    background-image: 
+        linear-gradient( to bottom, var(--blackTransparent) 0%, var(--blackTransparent) 100%),
+        url(../img/propiedad_2.jpg);
+}
+
+.property:nth-child(3) .property-img {
+    background-image: 
+        linear-gradient( to bottom, var(--blackTransparent) 0%, var(--blackTransparent) 100%),
+        url(../img/propiedad_3.jpg);
+}
+
+.property:nth-child(4) .property-img {
+    background-image: 
+        linear-gradient( to bottom, var(--blackTransparent) 0%, var(--blackTransparent) 100%),
+        url(../img/propiedad_4.jpg);
+}
+
+.property:nth-child(5) .property-img {
+    background-image: 
+        linear-gradient( to bottom, var(--blackTransparent) 0%, var(--blackTransparent) 100%),
+        url(../img/propiedad_5.jpg);
+}
+
+.property:nth-child(6) .property-img {
+    background-image: 
+        linear-gradient( to bottom, var(--blackTransparent) 0%, var(--blackTransparent) 100%),
+        url(../img/propiedad_6.jpg);
+}
+
+.property-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    aspect-ratio: 10/6;
+    position: relative;
+}
+
+.property-img h3 {
+    color:var(--white);
+    font-size: 2.4rem;
+    bottom: 1rem;
+    left: 1rem;
+    position: absolute;
+}
+
+.property-info {
+    padding: 2rem;
+}
+
+.property-info .price {
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.property-info a {
+    display: block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    transition-duration: .3s;
+    transition-property: background-color;
+}
+
+.property-info a:hover {
+    background-color: var(--primaryDarken);
+}
