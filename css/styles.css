@@ -369,3 +369,87 @@ p {
     background-color: var(--primaryLighten);
     color: var(--white);
 }
+
+/* ==== testimonials-blog ==== */
+
+.testimonials-blog {
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .testimonials-blog {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+    }
+}
+
+/* ==== testimonials ==== */
+
+.testimonials-content {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.testimonials-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.testimonials-text::before {
+    background-image: url(../img/quote.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 4rem;
+    margin-right: 1rem;
+    width: 4rem;
+}
+
+/* ==== blog ==== */
+
+.post {
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .post {
+        display: grid;
+        grid-template-columns: 2fr 3.5fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .post-img {
+        height: 30rem;
+    }
+
+    .post-img img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.post-info {
+    padding: 1rem;
+}
+
+.meta {
+    font-size: 1.4rem;
+}
+
+.post a {
+    display: block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    transition-duration: .3s;
+    transition-property: background-color;
+}
+
+.post a:hover {
+    background-color: var(--primaryDarken);
+}
