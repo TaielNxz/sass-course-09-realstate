@@ -35,6 +35,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -108,16 +109,33 @@ p {
 /* ==== Header ==== */
 
 .header {
-  position: relative;
-
   padding: 3rem 0;
+  background-position: center center;
+  background-size: cover;
+}
+
+.notavif.notweb .header {
   background-image: linear-gradient(
       var(--primaryTransparent) 0,
       var(--primaryTransparent) 100%
     ),
     url(../img/header_bg.jpg);
-  background-position: center center;
-  background-size: cover;
+}
+
+.webp .header {
+  background-image: linear-gradient(
+      var(--primaryTransparent) 0,
+      var(--primaryTransparent) 100%
+    ),
+    url(../img/header_bg.webp);
+}
+
+.avif .header {
+  background-image: linear-gradient(
+      var(--primaryTransparent) 0,
+      var(--primaryTransparent) 100%
+    ),
+    url(../img/header_bg.avif);
 }
 
 @media (min-width: 768px) {
@@ -223,7 +241,9 @@ p {
   background-color: var(--white);
 }
 
-.property:nth-child(1) .property-img {
+/*===== property 1 =====*/
+
+.notavif.notweb .property:nth-child(1) .property-img {
   background-image: linear-gradient(
       to bottom,
       var(--blackTransparent) 0%,
@@ -232,7 +252,27 @@ p {
     url(../img/propiedad_1.jpg);
 }
 
-.property:nth-child(2) .property-img {
+.webp .property:nth-child(1) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_1.webp);
+}
+
+.avif .property:nth-child(1) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_1.avif);
+}
+
+/*===== property 2 =====*/
+
+.notavif.notweb .property:nth-child(2) .property-img {
   background-image: linear-gradient(
       to bottom,
       var(--blackTransparent) 0%,
@@ -241,7 +281,27 @@ p {
     url(../img/propiedad_2.jpg);
 }
 
-.property:nth-child(3) .property-img {
+.webp .property:nth-child(2) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_2.webp);
+}
+
+.avif .property:nth-child(2) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_2.avif);
+}
+
+/*===== property 3 =====*/
+
+.notavif.notweb .property:nth-child(3) .property-img {
   background-image: linear-gradient(
       to bottom,
       var(--blackTransparent) 0%,
@@ -250,7 +310,27 @@ p {
     url(../img/propiedad_3.jpg);
 }
 
-.property:nth-child(4) .property-img {
+.webp .property:nth-child(3) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_3.webp);
+}
+
+.avif .property:nth-child(3) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_3.avif);
+}
+
+/*===== property 4 =====*/
+
+.notavif.notweb .property:nth-child(4) .property-img {
   background-image: linear-gradient(
       to bottom,
       var(--blackTransparent) 0%,
@@ -259,7 +339,27 @@ p {
     url(../img/propiedad_4.jpg);
 }
 
-.property:nth-child(5) .property-img {
+.webp .property:nth-child(4) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_4.webp);
+}
+
+.avif .property:nth-child(4) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_4.avif);
+}
+
+/*===== property 5 =====*/
+
+.notavif.notweb .property:nth-child(5) .property-img {
   background-image: linear-gradient(
       to bottom,
       var(--blackTransparent) 0%,
@@ -268,13 +368,51 @@ p {
     url(../img/propiedad_5.jpg);
 }
 
-.property:nth-child(6) .property-img {
+.webp .property:nth-child(5) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_5.webp);
+}
+
+.avif .property:nth-child(5) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_5.avif);
+}
+
+/*===== property 6 =====*/
+
+.notavif.notweb .property:nth-child(6) .property-img {
   background-image: linear-gradient(
       to bottom,
       var(--blackTransparent) 0%,
       var(--blackTransparent) 100%
     ),
     url(../img/propiedad_6.jpg);
+}
+
+.webp .property:nth-child(6) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_6.webp);
+}
+
+.avif .property:nth-child(6) .property-img {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blackTransparent) 0%,
+      var(--blackTransparent) 100%
+    ),
+    url(../img/propiedad_6.avif);
 }
 
 .property-img {
@@ -321,6 +459,12 @@ p {
 /* ==== featured ==== */
 
 .featured {
+  background-repeat: no-repeat;
+  background-position: 70% 0%;
+  background-size: 100%, 110rem;
+}
+
+.notavif.notweb .featured {
   background-image: linear-gradient(
       to top,
       var(--primary) 0%,
@@ -329,18 +473,43 @@ p {
       transparent 100%
     ),
     url(../img/destacada.jpg);
-
-  background-repeat: no-repeat;
-  background-position: 70% 0%;
-  background-size: 100%, 110rem;
 }
+
+.webp .featured {
+  background-image: linear-gradient(
+      to top,
+      var(--primary) 0%,
+      var(--primary) 50%,
+      transparent 50%,
+      transparent 100%
+    ),
+    url(../img/destacada.webp);
+}
+
+.avif .featured {
+  background-image: linear-gradient(
+      to top,
+      var(--primary) 0%,
+      var(--primary) 50%,
+      transparent 50%,
+      transparent 100%
+    ),
+    url(../img/destacada.avif);
+}
+
 @media (min-width: 480px) {
   .featured {
     background-size: 100%, 80rem;
   }
 }
+
 @media (min-width: 768px) {
   .featured {
+    background-position: center, -40rem center;
+    background-size: 100%, 100%;
+  }
+
+  .notavif.notweb .featured {
     background-image: linear-gradient(
         to left,
         var(--primary) 0%,
@@ -349,9 +518,28 @@ p {
         transparent 100%
       ),
       url(../img/destacada.jpg);
-    background-position: center, -40rem center;
+  }
 
-    background-size: 100%, 100%;
+  .webp .featured {
+    background-image: linear-gradient(
+        to left,
+        var(--primary) 0%,
+        var(--primary) 50%,
+        transparent 50%,
+        transparent 100%
+      ),
+      url(../img/destacada.webp);
+  }
+
+  .avif .featured {
+    background-image: linear-gradient(
+        to left,
+        var(--primary) 0%,
+        var(--primary) 50%,
+        transparent 50%,
+        transparent 100%
+      ),
+      url(../img/destacada.avif);
   }
 }
 
